@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+body, html{
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/*Background image*/
+.bg_image{
+    background-image: url("../icon/bgImage.jpg");
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*Navigation bar*/
+.nav_bar{
+    width: 100%;
+    height: 5em;
+    margin-top: -689px;
+    position: fixed;
+    z-index: 999;
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+}
+
+.nav_content{
+    font-family: 'Ranchers', cursive;
+    list-style: none;
+    display: flex;
+    height: 65px;
+    margin: 0;
+    padding: 0;
+}
+.nav_content li{
+    padding: 2.5rem;
+}
+
+.nav_content > li > a{
+    text-decoration: none;
+    color: #5C3317;
+}
+
+.nav_content > li:hover a {
+    color:  #5F9F9F;
+}
+
+.drop_down-menu{
+    padding: 0;
+    z-index: 10;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.drop_down-menu a{
+    text-decoration: none;
+    color: #5C3317;
+    
+}
+
+.drop_down-content{
+    margin-top: -40px;
+    transition: opacity .5s linear;
+    z-index: 9999;
+    opacity: 0;   
+}
+
+.drop_down-menu:hover a{
+    color:  #5F9F9F;
+}
+
+.drop_down-content:hover a{
+    color: #5C3317;;
+    background-color:  #E6E8FA;
+    
+}
+
+.drop_down-menu:hover > .drop_down-content{
+    opacity: 1;
+}
+
+/*Business Card*/
+.card_container{
+    z-index: 10;
+    position: fixed;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    height: 400px;
+    width: 650px;
+    border: 1px solid #000000;
+    margin-top: -33em;
+    margin-left: 22em;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 7px 4px #777;
+	-moz-box-shadow: 0 7px 4px #777;
+    box-shadow: 0 7px 4px #777;
+    
+}
+
+.self_photo img{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.basic_info {
+    margin-left: 18em;
+    margin-top: -18em;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: block;
+}
+
+.basic_info h1,h3,span{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.basic_info p{
+    font-family: 'Jockey One', sans-serif;
+}
+
+.basic_info a,img{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    padding: 0.5em;
+}
+
+/*Footer*/
+.footer{
+    text-align: center;
+    font-family: 'Ranchers', cursive;
+    padding: 3px;
+    color: #FFFF;
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    position : fixed;
+    bottom : 0;
+    width : 100%;
+    
+}
+
+.footer > p{
+    color: #5C3317;
+}
+
+.footer > a{
+    text-decoration: none;
+    color: #5C3317;
+}
